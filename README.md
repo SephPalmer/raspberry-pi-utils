@@ -23,3 +23,6 @@ Utils for the Raspberry Pi
 
 `sudo visudo` to give a user root permissions. Use with caution
 
+## Some useful Docker commands
+
+`docker run --rm -d --network host --name <name of container> <name of image>` expose container to network

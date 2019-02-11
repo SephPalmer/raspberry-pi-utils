@@ -20,6 +20,14 @@ def hello():
            "<b>Visits:</b> {visits}"
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 
+@app.route('/_get_current_user')
+def get_current_user():
+    return jsonify(
+        username=g.user.username,
+        email=g.user.email,
+        id=g.user.id
+    )
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
 

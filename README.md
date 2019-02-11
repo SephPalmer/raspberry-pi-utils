@@ -25,4 +25,4 @@ Utils for the Raspberry Pi
 
 ## Some useful Docker commands
 
-`docker run --rm -d --network host --name <name of container> <name of image>` expose container to network
+`docker run --rm -d --network host --name <name of container> <name of image>` Docker Run exposing container to network
